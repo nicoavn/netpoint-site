@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	--font-oswald: 'Oswald', sans-serif;
+	--font-montserrat: 'Montserrat', sans-serif;
+	--c-white: white;
+	--c-light-blue: #44CCDF;
+	--c-orange: #FF6D2D;
+	font-family: var(--font-montserrat);
+}
+
+h1 {
+	font-family: var(--font-oswald);
+	font-size: 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--cWhite);
+	letter-spacing: 7px;
+}
+
+header {
+	background: silver;
+	position: relative;
+	background: transparent url(./images/bg-header.jpg) top center no-repeat;
+	background-size: cover;
+	min-height: 795px;
+}
+
+header .link-logo {
+	margin-top: -50px;
+	margin-left: 60px;
+	display: inline-block;
+}
+
+header .top-contact {
+	color: var(--c-white);
+	font-weight: 500;
+	font-size: 14px;
+	text-align: left;
+	margin-top: 38px;
+	margin-left: 34px;
+	margin-right: 38px;
+	display: inline-block;
+}
+
+header .top-contact span {
+	color: var(--c-orange);
+	font-family: var(--font-oswald);
+	font-size: 30px;
+	font-weight: 500;
+	letter-spacing: 7px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+header nav {
+	position: relative;
+	top: 0;
+	right: 0;
+	/*display: inline-block;*/
+	text-align: right;
+}
+
+header nav a {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--c-white);
+	text-decoration: none;
+}
+
+header nav a + a {
+	margin-left: 30px;
+}
+
+header .top-banner-info {
+	text-align: center;
+	margin-top: 238px;
+}
+
+header .top-banner-info img {
+
+}
+
+header .top-banner-info h1 {
+	margin-top: 42px;
+	margin-bottom: 22px;
+	color: var(--c-white);
+}
+
+header .top-banner-info p {
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--c-light-blue);
+	margin: 0;
+}
+
+
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+	h1 {
+		font-size: 30px;
+	}
+
+	header {
+		min-height: 480px;
+	}
+
+	header .top-banner-info {
+		margin-top: 65px;
+	}
+
+	header .top-banner-info p {
+		font-size: 18px;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
