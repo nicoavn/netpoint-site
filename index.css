@@ -57,18 +57,30 @@ table {
 	--font-oswald: 'Oswald', sans-serif;
 	--font-montserrat: 'Montserrat', sans-serif;
 	--c-white: white;
-	--c-light-blue: #44CCDF;
+	--c-blue-light: #44CCDF;
+	--c-blue-dark: #172433;
 	--c-orange: #FF6D2D;
+	--c-gray-light: #5B6E7F;
 	font-family: var(--font-montserrat);
 }
 
-h1 {
+h1, h2 {
 	font-family: var(--font-oswald);
 	font-size: 40px;
 	font-weight: 500;
 	text-transform: uppercase;
-	color: var(--cWhite);
+	color: var(--c-white);
 	letter-spacing: 7px;
+}
+
+h2 {
+	color: var(--c-blue-dark);
+}
+
+p {
+	color:var(--c-gray-light);
+	font-size: 20px;
+	line-height: 30px;
 }
 
 header {
@@ -144,9 +156,56 @@ header .top-banner-info h1 {
 header .top-banner-info p {
 	font-size: 20px;
 	font-weight: 500;
-	color: var(--c-light-blue);
+	color: var(--c-blue-light);
 	margin: 0;
 }
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.section-content {
+	width: 58%;
+}
+
+.section-content.section-content-right {
+	float: right;
+}
+
+/* Section Experience */
+.experience {
+	background: transparent url('./images/bg-experience.jpg') top left no-repeat;
+	background-size: auto 100%;
+}
+
+.experience > div {
+	min-height: 864px;
+}
+
+.experience h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--c-blue-dark);
+	margin-top: 170px;
+	line-height: 48px;
+}
+
+.experience p {
+	margin-top: 38px;
+}
+
+.experience p strong {
+	font-size: 26px;
+	font-weight: 700;
+	color: var(--c-blue-dark);
+}
+/* Section Experience End */
 
 
 /*
